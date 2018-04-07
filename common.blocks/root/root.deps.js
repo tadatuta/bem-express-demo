@@ -1,3 +1,8 @@
 ({
-    shouldDeps: 'page'
+    shouldDeps: [
+        {
+            block: 'page',
+            mods: { theme: 'islands' }
+        }
+    ]
 })

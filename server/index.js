@@ -61,6 +61,8 @@ app.get('/ping/', function(req, res) {
 });
 
 app.get('/', function(req, res) {
+    const cards = require('../data/data');
+
     render(req, res, {
         view: 'page-index',
         title: 'Main page',
@@ -70,7 +72,8 @@ app.get('/', function(req, res) {
                 url: 'https://site.com',
                 siteName: 'Site name'
             }
-        }
+        },
+        cards
     })
 });
 
